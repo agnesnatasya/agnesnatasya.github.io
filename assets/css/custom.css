@@ -120,7 +120,7 @@ p {
   border: burlywood 5px solid;
 }
 
-.row {
+.row-projects {
   display: flex;
   padding-left: 17%;
   padding-right: 17%;
@@ -171,6 +171,25 @@ p {
   margin-top: 10%;
   margin-bottom: 0px;
   border-left: burlywood 5px solid;
+}
+
+.experience-all {
+  text-align: center;
+}
+.experience-logo img {
+  padding:0;
+  border-radius: 50%;
+  border: burlywood 10px solid;
+  height: 30vh;
+  margin: 10% 5% 5% 5%;
+  vertical-align: top;
+}
+
+.experience-description {
+  border: burlywood 10px solid;
+  margin: -40% 5% 5% 5%;
+  padding: 40% 3% 3% 3%;
+  text-align: left;
 }
 
 @media (max-width: 1196px) {
@@ -224,6 +243,12 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+  .experience-description {
+    border: burlywood 10px solid;
+    margin: -35% 5% 5% 5%;
+    padding: 35% 3% 3% 3%;
+    text-align: left;
   }
 }
 
