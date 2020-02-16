@@ -1,0 +1,284 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.bg-custom {
+  background-color: burlywood;
+}
+
+
+.bg-white {
+  background-color: white;
+}
+
+.nav-item {
+  flex-grow: 1;
+  flex: 1;
+  flex-basis: auto;
+  text-align: center;
+}
+
+.nav-link {
+  border: black 100px;
+}
+.navbar-nav {
+  flex: 1;
+  border: 10px black;
+}
+
+.nav-link:hover{
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
+.content-home{
+  font-size: 20px;
+  margin-top: -30%;
+  padding-top: 30%;
+}
+
+
+.container-fluid {
+  background-color: #fce0d5;
+  padding-bottom: 10%;
+}
+
+.long-name {
+  font-family: 'Lobster';
+  font-size: 50px;
+  margin: 0 0 7% 0;
+}
+
+.profile-picture {
+  text-align: center;
+  padding: 5% 20% 0% 20%;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  border: burlywood 10px solid;
+  height: 40vh;
+  margin: 10% 5% 5% 5%;
+  vertical-align: top;
+  z-index: 1;
+}
+
+p {
+  clear: both;
+}
+
+.videos {
+  display: flex;
+  border-collapse: collapse;
+
+}
+
+.video iframe {
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 50%;
+  border: burlywood 5px solid ;
+  border-collapse: collapse;
+}
+
+.videos iframe {
+  flex: 1;
+  flex-wrap: wrap;
+  border: burlywood 5px solid ;
+  border-collapse: collapse;
+}
+
+.videos iframe:last-of-type {
+  border-left: 0px;
+}
+
+.news-images {
+  display: flex;
+}
+
+.news-image {
+  flex-grow: 1;
+  flex-basis: auto;
+  border: burlywood 5px solid;
+}
+
+.news-images img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  border: burlywood 5px solid;
+}
+
+.skill-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill-images img {
+  width: 13vw;
+  height: 13vw;
+  border: burlywood 5px solid;
+}
+
+.row {
+  display: flex;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+
+.col img {
+  padding-top: 10%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.projects-content {
+  padding-left: 5% ;
+  padding-top: 5% ;
+  border-left: burlywood 5px solid;
+}
+
+.projects-content2 {
+  padding-right: 5% ;
+  padding-top: 5% ;
+  border-right: burlywood 5px solid;
+}
+
+.projects-content3 {
+  padding-left: 5% ;
+  padding-top: 5% ;
+  border-left: burlywood 5px solid;
+  border-bottom: burlywood 5px solid;
+}
+
+.title-border-top-left {
+  padding-left: 5% ;
+  margin-top: 10%;
+  margin-bottom: 0px;
+  border-left: burlywood 5px solid;
+  border-top: burlywood 5px solid;
+}
+
+.title-border-right {
+  padding-right: 5% ;
+  margin-top: 10%;
+  margin-bottom: 0px;
+  border-right: burlywood 5px solid;
+}
+
+.title-border-left {
+  padding-left: 5% ;
+  margin-top: 10%;
+  margin-bottom: 0px;
+  border-left: burlywood 5px solid;
+}
+
+@media (max-width: 1196px) {
+  .title-border-top-left {
+    border-right: burlywood 5px solid;
+    padding-right: 5%;
+  }
+
+  .projects-content {
+    border-right: burlywood 5px solid;
+    padding-right: 5%;
+  }
+
+  .reorder2048 {
+    order: 1;
+  }
+
+  .title-border-right {
+    padding-left: 5% ;
+    border-top: burlywood 5px solid;
+    border-left: burlywood 5px solid;
+  }
+
+  .projects-content2 {
+    border-left: burlywood 5px solid;
+    padding-left: 5%;
+  }
+
+  .title-border-left {
+    padding-right: 5% ;
+    border-top: burlywood 5px solid;
+    border-right: burlywood 5px solid;
+  }
+
+  .projects-content3 {
+    border-left: burlywood 5px solid;
+    border-right: burlywood 5px solid;
+    border-bottom: 0px;
+    padding-left: 5%;
+  }
+
+  .col {
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .video iframe {
+    max-width: 100%;
+  }
+
+  .news-images {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .news-images img {
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    border: burlywood 5px solid;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .video iframe {
+    max-width: 100%;
+  }
+
+  .news-images img {
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    border: burlywood 5px solid;
+  }
+
+
+}
