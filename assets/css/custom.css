@@ -115,9 +115,17 @@ p {
 }
 
 .skill-images img {
-  width: 13vw;
-  height: 13vw;
+  width: 10vw;
+  height: 10vw;
   border: burlywood 5px solid;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills h1 {
+  margin-top: 2%;
 }
 
 .row-projects {
