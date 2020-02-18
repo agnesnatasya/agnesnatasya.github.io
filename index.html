@@ -1,117 +1,64 @@
-<html>
-        <head>
-                <script type="text/javascript" src="d3.min.js"></script>
-                <style>
-                 td:empty::before {content: "N/A";}
-                 table   {font-family: sans-serif; text-align: center; border-collapse: collapse;}
-                 th,td  {border:1px solid;}
-                 th     {font-size:18; background-color:midnightblue; color: white;}
-                 td     {font-size:16;}
-                 caption{font-size:20; font-weight:bold;}
-                 span    {font-family: sans-serif; font-size:20;}
-                 input   {font-family: sans-serif; font-size:19;}
-                 button  {font-family: sans-serif; font-size:20;}
-                 #load     {color:gray}
-                 v\:*{
-                         display: inline-block;
-                 }
-                </style>                     
-        </head>
-        <body>
-        <img src="symbol.jpg" width=100%><br><br>
-        <span><a href="home.html">Enter </a>your 8-digit Singapore Airlines' staff number </span><input type="text" id="staff" value="" maxlength=8>
-        <button onclick="getValue()">Submit</button>
-        <span id="load" hidden=true>Loading... Refresh if not responding</span><br>
-        <table id="user" width=100%></table> <br><br>
-        <table id="mentor" width=100%></table><br><br>
-        <table id="group" width=100%></table> <br><br>
-        <table id="mentees" width=100%></table> <br><br>
-        <script>
-                var numberOfRows;
-                function getValue() {
-                var user = document.getElementById("user");
-                var mentor=document.getElementById("mentor");
-                var groupTable = document.getElementById("group");
-                var menteesTable = document.getElementById("mentees");
-                var staffno = document.getElementById("staff").value;
-                var userName;
-                var mentorName;
-                user.innerHTML=""
-                user.innerHTML+="<caption>Personal Particulars</caption><tr><th width=10%>Title</th><th width=10%>Rank</th><th width=30%>Name</th><th width=10%>Fleet</th><th width=40%>Email</th></tr>";
-                mentor.innerHTML="";
-                mentor.innerHTML+="<caption>Mentor's Particulars</caption><tr><th width=10%>Mentor's Title</th><th width=10%>Mentor's Rank</th><th width=30%>Mentor's Name</th><th width=10%>Mentor's Fleet</th><th width=40%>Mentor's Email</th></tr>";
-                groupTable.innerHTML="";
-                groupTable.innerHTML+="<caption>My Mentor's Group</caption><tr><th width=10%>Title</th><th width=10%>Rank</th><th width=30%>Name</th><th width=10%>Fleet</th><th width=40%>Email</th></tr>";
-                menteesTable.innerHTML="";
-                menteesTable.innerHTML+="<caption>My Mentees</caption><tr><th width=10%>Title</th><th width=10%>Rank</th><th width=30%>Name</th><th width=10%>Fleet</th><th width=40%>Email</th></tr>";
-                document.getElementById('user').hidden = true;
-                document.getElementById('mentor').hidden = true;
-                document.getElementById('group').hidden = true;
-                document.getElementById('mentees').hidden = true;
-                document.getElementById('load').hidden = false;
-                var another=0;
-                var counter=0;
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                //Check the person's name and mentor's name.
-                d3.csv("https://raw.githubusercontent.com/agnesnatasya/cobaaa/master/abal.csv",function(data){
-                        if (Number(data.PN)==Number(staffno)){
-                                user.innerHTML+= "<tr><td>"+data.Title +"</td><td>" + data.Rank +"</td><td>" + data.Name +"</td><td>" + data.Fleet +"</td><td>"+data.Email+"</td></tr>";
-                                userName=data.Name;
-                                mentorName=data.Mentor;
-                                counter+=1;
-	                }
-                        counter+=1;    
-                });
-                
-                d3.csv("https://raw.githubusercontent.com/agnesnatasya/cobaaa/master/abal.csv", function(data){        
-                        //Mentor's particulars
-                        if (data.Name==mentorName){
-                                mentor.innerHTML+="<tr><td>"+ data.Title +"</td><td>" + data.Rank +"</td><td>" + data.Name +"</td><td>" + data.Fleet +"</td><td>" + data.Email+"</td></tr>";   
-	                }
-                        //Group's Particular
-                        if (data.Mentor==mentorName){
-                                groupTable.innerHTML+="<tr><td>"+ data.Title +"</td><td>" + data.Rank +"</td><td>" + data.Name +"</td><td>" + data.Fleet +"</td><td>"+data.Email +"</td></tr>";
-                        }
-                        //Mentees' Particular
-                        if (data.Mentor==userName){
-                                menteesTable.innerHTML+="<tr><td>"+ data.Title +"</td><td>" + data.Rank +"</td><td>" + data.Name +"</td><td>" + data.Fleet +"</td><td>"+data.Email +"</td></tr>";
-                        }
-                        another+=1;
-                        //Check if no data, add N/A
-                        if (another==counter-1){
-                                if (document.getElementById("user").rows.length<=1){
-                                        addUserRow();
-                                }
-                                if (document.getElementById("mentor").rows.length<=1) {
-                                        addMentorRow();
-                                }
-                                if (document.getElementById("group").rows.length<=1) {
-                                        addGroupRow();
-                                }
-                                if (document.getElementById("mentees").rows.length<=1) {
-                                        addMenteesRow();
-                                }
-                                document.getElementById('user').hidden = false;
-                                document.getElementById('mentor').hidden = false;
-                                document.getElementById('group').hidden = false;
-                                document.getElementById('mentees').hidden = false;
-                                document.getElementById('load').hidden = true;
-                        }
-                });
-                }
-                function addUserRow(){
-                        document.getElementById("user").innerHTML+="<tr><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>";
-                }
-                function addMentorRow(){
-                        document.getElementById("mentor").innerHTML+="<tr><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>";
-                }
-                function addGroupRow(){
-                        document.getElementById("group").innerHTML+="<tr><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>";
-                }
-                function addMenteesRow(){
-                        document.getElementById("mentees").innerHTML+="<tr><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>";
-                }
-                
-        </script>
-        </body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Poiret+One|Lobster|Playfair+Display|Tenor+Sans&display=swap" rel="stylesheet">
+    <title>Agnes' Page</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experiences.html">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="profile-picture">
+            <img src="assets/img/profile.jpg" alt="Agnes Natasya">
+            <div class="content-home">
+              <h1 class="long-name">Agnes Natasya</h1>
+              <p>Hi, welcome to my page 😁!<br> My name is Agnes Natasya, I am a year 2 Computer Science undergraduate in the National University of Singapore </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
