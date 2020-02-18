@@ -1,5 +1,6 @@
 body {
   font-family: 'Quicksand', sans-serif;
+  background-color: #fce0d5;
 }
 
 .bg-custom {
@@ -9,6 +10,37 @@ body {
 
 .bg-white {
   background-color: white;
+}
+
+
+h1 {
+  font-family: 'Lobster', serif;
+  padding-top: 2%;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lobster', serif;
+  padding-top: 2%;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Poiret One', serif;
+  text-align: center;
+  font-weight: bolder;
+  padding: 1% 0 1% 0;
+}
+
+h6 {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  padding-top: 7%;
 }
 
 .nav-item {
@@ -40,12 +72,12 @@ body {
 
 .container-fluid {
   background-color: #fce0d5;
+  font-size: 20px;	
   padding-bottom: 10%;
 }
 
 .long-name {
   font-family: 'Lobster';
-  font-size: 50px;
   margin: 0 0 7% 0;
 }
 
@@ -70,7 +102,7 @@ p {
 .videos {
   display: flex;
   border-collapse: collapse;
-
+  padding-top: 1%;
 }
 
 .video iframe {
@@ -94,6 +126,7 @@ p {
 
 .news-images {
   display: flex;
+  padding-top: 1%;
 }
 
 .news-image {
@@ -102,21 +135,30 @@ p {
 }
 
 .news-images img {
-  width: 8vw;
-  height: 8vw;
+  width: 7vw;
+  height: 7vw;
   border-radius: 50%;
   border: burlywood 5px solid;
 }
 
+.half-border {
+  margin-top: 4%;
+  border-top: burlywood 5px solid;
+}
 .skill-images {
   display: flex;
   justify-content: space-evenly;
+  vertical-align: middle;
+  padding-top: 1.5%;
+  padding-bottom: 2.5%;
 }
 
 .skill-images img {
-  width: 10vw;
-  height: 10vw;
-  border: burlywood 5px solid;
+  display: inline-block;
+  max-width: 7vw;
+  max-height: 7vw;
+  margin: auto;
+  vertical-align: middle;
 }
 
 .skills {
@@ -124,13 +166,17 @@ p {
 }
 
 .skills h1 {
-  margin-top: 2%;
+  border-top: burlywood 5px solid;
+}
+
+.skills h1:first-child{
+  border-top: burlywood 0px solid;
 }
 
 .row-projects {
   display: flex;
-  padding-left: 17%;
-  padding-right: 17%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .col img {
@@ -164,6 +210,7 @@ p {
   margin-bottom: 0px;
   border-left: burlywood 5px solid;
   border-top: burlywood 5px solid;
+  text-align: left;
 }
 
 .title-border-right {
@@ -171,6 +218,7 @@ p {
   margin-top: 10%;
   margin-bottom: 0px;
   border-right: burlywood 5px solid;
+  text-align: right;
 }
 
 .title-border-left {
@@ -178,26 +226,44 @@ p {
   margin-top: 10%;
   margin-bottom: 0px;
   border-left: burlywood 5px solid;
+  text-align: left;
 }
 
 .experience-all {
   text-align: center;
+  padding: 0;
 }
 .experience-logo img {
   padding:0;
   border-radius: 50%;
-  border: burlywood 10px solid;
+  border: burlywood 5px solid;
   height: 30vh;
   margin: 10% 5% 5% 5%;
   vertical-align: top;
 }
 
 .experience-description {
-  border: burlywood 10px solid;
+  border: burlywood 5px solid;
   margin: -40% 5% 5% 5%;
-  padding: 40% 3% 3% 3%;
+  padding: 40% 1% 1% 3%;
   text-align: left;
+  font-size: 17px;
 }
+
+.contact-logos img {
+  text-align: center;
+  height:15vw;
+  max-width:30vw;
+}
+.contact-logos  {
+  padding-top: 25vh;
+  text-align: center;
+}
+
+.media-description {
+  margin-bottom: 0.3%;
+}
+
 
 @media (max-width: 1196px) {
   .title-border-top-left {
@@ -260,6 +326,15 @@ p {
 }
 
 @media (max-width: 767.98px) {
+  .profile-picture img {
+    border-radius: 50%;
+    border: burlywood 10px solid;
+    width: 32vw;
+    height: 32vw;
+    margin: 10% 5% 5% 5%;
+    vertical-align: top;
+    z-index: 1;
+  }
 
   .videos {
     display: flex;
@@ -275,10 +350,18 @@ p {
     max-width: 100%;
   }
 
+  .videos iframe {
+    max-width: 100%;
+  }
+
+  .videos iframe:last-of-type {
+    border-left: burlywood 5px solid;
+    border-top: 0px;
+  }
+
   .news-images {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .news-images img {
@@ -291,6 +374,30 @@ p {
 }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 21.5px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 20.5px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
   .videos {
     display: flex;
     flex-wrap: wrap;
@@ -302,6 +409,10 @@ p {
   }
 
   .video iframe {
+    max-width: 100%;
+  }
+
+  .videos iframe {
     max-width: 100%;
   }
 
