@@ -73,7 +73,11 @@ h6 {
 .container-fluid {
   background-color: #fce0d5;
   font-size: 20px;	
-  padding-bottom: 10%;
+  padding-bottom: 4%;
+}
+
+.social-media {
+  margin-bottom: 3vw;
 }
 
 .long-name {
@@ -146,6 +150,7 @@ p {
   border-top: burlywood 5px solid;
 }
 .skill-images {
+  text-align: center;
   display: flex;
   justify-content: space-evenly;
   vertical-align: middle;
@@ -252,11 +257,31 @@ p {
 
 .contact-logos img {
   text-align: center;
-  height:15vw;
-  max-width:30vw;
+  display: inline-block;
+  height: 2vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.contacts-container {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .contact-logos  {
-  padding-top: 25vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border:burlywood 3px solid;
+  border-radius: 40px;
+}
+.contact-img  {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.contact-right-border  {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -369,6 +394,10 @@ p {
     height: 16vw;
     border-radius: 50%;
     border: burlywood 5px solid;
+  }
+
+  .contact-logos img {
+    text-align: center;
   }
 
 }
