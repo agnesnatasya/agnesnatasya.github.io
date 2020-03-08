@@ -1,3 +1,7 @@
+html, body {
+  margin: 0;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #fce0d5;
@@ -74,6 +78,7 @@ h6 {
   background-color: #fce0d5;
   font-size: 20px;	
   padding-bottom: 4%;
+  min-height: 100%;
 }
 
 .social-media {
@@ -258,14 +263,17 @@ p {
 .contact-logos img {
   text-align: center;
   display: inline-block;
-  height: 2vw;
+  height: 30px;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
+  
 }
 
 .contacts-container {
   padding-left: 10%;
   padding-right: 10%;
+  display: inline-block;
+  margin: auto;
 }
 .contact-logos  {
   display: flex;
@@ -275,8 +283,8 @@ p {
   border-radius: 40px;
 }
 .contact-img  {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 .contact-right-border  {
@@ -289,6 +297,17 @@ p {
   margin-bottom: 0.3%;
 }
 
+.social-media .row {
+  text-align: center;
+}
+
+.footer{ 
+  background-color: #fce0d5;
+  position: fixed;     
+  text-align: center;    
+  bottom: 0px; 
+  width: 100%;
+}  
 
 @media (max-width: 1196px) {
   .title-border-top-left {
@@ -396,9 +415,36 @@ p {
     border: burlywood 5px solid;
   }
 
-  .contact-logos img {
+/*  .contact-logos img {
     text-align: center;
   }
+
+  .contacts-container {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+  .contact-logos  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:burlywood 3px solid;
+    border-radius: 30%;
+  }
+
+  .contact-logos img {
+    text-align: center;
+    display: inline-block;
+    height: 4vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
+  .contact-img img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+*/
 
 }
 
@@ -452,5 +498,30 @@ p {
     border: burlywood 5px solid;
   }
 
+/*  .contacts-container {
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+  .contact-logos  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:burlywood 3px solid;
+    border-radius: 20%;
+  }
 
+  .contact-logos img {
+    text-align: center;
+    display: inline-block;
+    height: 7vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
+  .contact-img img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+*/
 }
