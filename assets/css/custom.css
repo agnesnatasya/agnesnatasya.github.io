@@ -301,13 +301,6 @@ p {
   text-align: center;
 }
 
-.footer{ 
-  background-color: #fce0d5;
-  position: fixed;     
-  text-align: center;    
-  bottom: 0px; 
-  width: 100%;
-}  
 
 @media (max-width: 1196px) {
   .title-border-top-left {
@@ -373,8 +366,8 @@ p {
   .profile-picture img {
     border-radius: 50%;
     border: burlywood 10px solid;
-    width: 32vw;
-    height: 32vw;
+    width: 40vw;
+    height: 40vw;
     margin: 10% 5% 5% 5%;
     vertical-align: top;
     z-index: 1;
