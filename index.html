@@ -1,90 +1,356 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Poiret+One|Lobster|Playfair+Display|Tenor+Sans&display=swap" rel="stylesheet">
-    <title>Agnes' Page</title>
-  </head>
-  <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="experiences.html">Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="media.html">Media</a>
-            </li>
-          </ul>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Quicksand|Raleway|Muli|Lato|Poiret+One|Lobster|Playfair+Display|League+Spartan|Tenor+Sans&display=swap"
+    rel="stylesheet">
+  <title>Agnes' Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiences">EXPERIENCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#media">MEDIA</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Home-->
+  <section id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="long-name">Agnes<br>
+            Natasya
+          </h1>
         </div>
-      </nav>
 
-      <div class="container-fluid">
-        <div class="container">
+        <div class="col-sm-6">
           <div class="profile-picture">
             <img src="assets/img/profile.jpg" alt="Agnes Natasya">
-            <div class="content-home">
-              <h1 class="long-name">Agnes Natasya</h1>
-              <p>Hi, welcome to my page 😁!<br> My name is Agnes Natasya, I am a year 2 Computer Science undergraduate in the National University of Singapore </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About-->
+  <section id="about">
+    <div class="content-home">
+      <div class="container-fluid">
+        <p>My name is Agnes Natasya, I am a Computer Science undergraduate in
+          the National University of Singapore. My project interst is web development
+          and I have built some full-stack websites. Beyond that, I intended to specialise
+          machine learning throughout my study.</p>
+
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="row">
+            <div class="col-sm-3">
+              <span>Java</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>Python</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>JavaScript</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>HTML</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>CSS</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>ReactJS</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>Ruby on Rails</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>Flask</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>Redux</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div>
+
+            <div class="col-sm-3">
+              <span>NodeJS</span>
+            </div>
+            <div class="col-sm-9 progress">
+              <div class="progress-bar progress-bar-brown" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                aria-valuemin="0" aria-valuemax="100">65%</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!--Experiences-->
+  <section id="experiences">
+    <div class="content-experiences">
+      <h3>experiences</h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="assets/img/autodesk.jpg" class="experience-img" alt="Autodesk">
+        </div>
+        <div class="col-sm-9">
+          <h6>AUTODESK | SOFTWARE DEVELOPER INTERN<br>May 2020 - Present</h6>
+          <ul>
+            <li>
+              Implemented API linter and validator system to standardize design and validity of API proxies deployed in
+              Forge platform.
+            </li>
+            <li>
+              Created API proxy in API management platform, with OAuth2 authentication, built using Jenkins pipeline.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <footer class="footer">
-      <div class="container social-media">
-        <div class="row">
-          <div class="contacts-container">
-            <div class="contact-logos">
-              <div class="contact-img">
-              <a href="https://www.github.com/agnesnatasya" target="_blank">
-                <img src="assets/img/contact-github.png" alt="Github">
-              </a>
-              </div>
-              <div class="contact-img">
-              <a href="mailto:agnesnatasya@u.nus.edu" target="_blank">
-              <img src="assets/img/contact-email2.png" alt="Email">
-              </a>
-              </div>
-              <div class="contact-img">
-              <a href="https://www.instagram.com/agnes.natasya/?hl=en" target="_blank">
-                <img src="assets/img/contact-instagram.png" alt="Instagram">
-              </a>
-              </div>
-              
-            </div>
-          </div>
+      <svg height="1" width=100%>
+        <line x1="10%" y1="0" x2="90%" y2="0" style="stroke:#bf9b6d;stroke-width:2" />
+      </svg>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="assets/img/sia.png" class="experience-img" alt="Autodesk">
+        </div>
+        <div class="col-sm-9">
+          <h6>SINGAPORE AIRLINES | DATA SCIENCE INTERN<br>May 2019 - Aug 2019</h6>
+          <ul>
+            <li>
+              Developed simple website page for the staffs to ease information query from all mobile devices </li>
+            <li>
+              Analyzed fuel usage of flights using Python and proposed approaches to increase efficiency using Numpy
+              and Pandas libraries in Python
+            </li>
+            <li>
+              Designed various Excel VBA automation programs to ease colleagues by simplifying tedious tasks </li>
+            <li>
+              Created programs using Java and Python to generate necessary information for flights planning </li>
+          </ul>
+        </div>
+      </div>
+
+      <svg height="1" width=100%>
+        <line x1="10%" y1="0" x2="90%" y2="0" style="stroke:#bf9b6d;stroke-width:2" />
+      </svg>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="assets/img/nus.png" class="experience-img" alt="Autodesk">
+        </div>
+        <div class="col-sm-9">
+          <h6>NATIONAL UNIVERSITY OF SINGAPORE | TEACHING ASSISTANT<br>Jan 2019 - Jun 2020</h6>
+          <ul>
+
+            <li>
+              Teach SoC students in a programming methodology class, CS2030, focusing on good design of a program in
+              Java,
+              focusing on OOP and functional programming with an average feedback score of 4.4
+            </li>
+            <li>
+              Teach a basic programming class for engineering students, CS1010E, taught in Python language every week
+            </li>
+            <li>
+              Assessed submission of program designs from students and provide constructive feedbacks for their design
+              and
+              advice for good design practices.
+            </li>
+          </ul>
 
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  <section id="projects">
+    <div class="content-projects">
+      <h3>Projects</h3>
+      <div class="row row-projects">
+        <div class="col">
+          <h6 class="title-border-top-left">CHATBOT DEVELOPMENT</h6>
+          <div class="projects-content">
+            <p>Developed a desktop chatbot, with a GUI, to store list of tasks that needs to be done and keep track of
+              it over time. </p>
+            <p>The chatbot can process user input including data loading and storage from computer using <strong>Java
+                and JavaFX</strong>.</p>
+            <p>Click <a href="https://github.com/agnesnatasya/duke" target="_blank">here</a> to head up to the
+              repository!</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="assets/img/projects-duke.png" alt="Java">
+        </div>
+      </div>
+
+      <div class="row row-projects">
+        <div class="col reorder2048">
+          <img src="assets/img/projects-2048.png" alt="Java">
+        </div>
+        <div class="col">
+          <h6 class="title-border-right">2048 GAME</h6>
+          <div class="projects-content2">
+            <p>Developed game logic for 2048 game which involves deep matrix operation and manipulation using
+              <strong>Python.</strong></p>
+            <p><a href="https://play2048.co/" target="_blank">Click</a> to see what is 2048 game and find yourself enjoy
+              playing it! Alternatively, you can download the files from my Github repository and play it offline from
+              your own computer :D</p>
+            <p><a href="https://github.com/agnesnatasya/2048-Game" target="_blank">Click</a> to download from my
+              repository!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-projects">
+        <div class="col">
+          <h6 class="title-border-left">WEBPAGES DEVELOPMENT</h6>
+          <div class="projects-content3">
+            <p>Developed some front-end pages to practice front-end skills in <strong>HTML, CSS and JavaScript</strong>
+            </p>
+            <p>In particular, you can use this webpage (on the screenshot) as your canvas. Feel free to sketch anything
+              there!</p>
+            <p>Click <a href="https://github.com/agnesnatasya/pages" target="_blank">here</a> to head up to the
+              repository and explore some webpages that I created!</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="assets/img/projects-sketch.png" alt="Java">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="media">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
