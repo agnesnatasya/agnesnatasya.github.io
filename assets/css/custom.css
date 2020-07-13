@@ -283,8 +283,8 @@ h3 {
   }
 
   .experience-img {
-    max-width: 100%;
-    top: 50%;
+    width: 90%;
+    top: 57%;
     margin-top: -50%;
     position: absolute;
   }
