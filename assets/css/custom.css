@@ -41,10 +41,12 @@ h3 {
 }
 
 h5 {
-  font-family: 'Poiret One', serif;
-  text-align: center;
-  font-weight: bolder;
-  padding: 1% 0 1% 0;
+  font-family: Raleway, serif;
+  font-size: 16px;
+  letter-spacing: .1em;
+  font-weight: 400;
+  color: white;
+  font-weight: bold;
 }
 
 h6 {
@@ -82,7 +84,7 @@ h6 {
 }
 
 .container-fluid {
-  font-size: 15px;
+  font-size: 16px;
   min-height: 100%;
 }
 
