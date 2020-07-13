@@ -312,7 +312,13 @@ h3 {
 
   .long-name {
     font-size: 90px;
+    right: -15%;
   }
+
+  .profile-picture img {
+    margin-left: -50%;
+  }
+
 
   .content-media {
     color: #575656;
@@ -360,6 +366,16 @@ h3 {
   p {
     clear: both;
   }
+
+  .long-name {
+    font-size: 119px;
+    right: -10%;
+  }
+
+  .profile-picture img {
+    margin-left: -57%;
+  }
+
 
   .d-block .w-100 {
     width: 100%;
