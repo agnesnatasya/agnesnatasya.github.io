@@ -98,10 +98,12 @@ h3 {
 .progress {
   margin-top: 1%;
   background-color: white;
+  height: 10% !important;
 }
 
 .progress-bar-brown {
   background-color: #bf9b6d !important;
+  border-radius: 5px;
   vertical-align: middle;
 }
 
