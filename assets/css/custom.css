@@ -27,6 +27,13 @@ h6 {
   font-weight: bold;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fef4e8;
+    z-index: 5;
+    border-bottom: 2px solid #bf9b6d;
+}
 
 .nav-item {
   flex-grow: 1;
@@ -94,6 +101,45 @@ h3 {
   color: #bf9b6d
 }
 
+.skill-image-and-title {
+  vertical-align: center;
+}
+.skill-image {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.skill-title {
+  padding-top: 1%;
+  text-align: center;
+  vertical-align: center ;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-rows: 110px 10px 110px 10px 110px 10px 110px 10px 110px;
+    grid-template-columns: 24% 1% 24% 1% 24% 1% 24%;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bf9b6d;
+}
+
+.dot-separator {
+  color: #bf9b6d
+}
 
 .progress {
   margin-top: 1%;
