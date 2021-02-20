@@ -111,7 +111,7 @@ h3 {
 .skill-grid {
     display: grid;
     grid-template-rows: 110px 10px 110px 10px 110px 10px 110px 10px 110px;
-    grid-template-columns: 23% 3% 23% 3% 23% 3% 23%;
+    grid-template-columns: 22% 4% 22% 4% 22% 4% 22%;
 }
 
 .skill-box {
@@ -197,7 +197,7 @@ hr {
 
 .project-border-all {
   border: #bf9b6d 3px solid;
-  margin: 2%;
+  margin: 3%;
 }
 
 .project-border-top-left {
