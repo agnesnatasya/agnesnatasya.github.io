@@ -53,7 +53,7 @@ body {
 .long-name {
   font-family: Raleway, sans-serif;
   font-size: 30px;
-  padding-top: 3%;
+  padding-top: 20%;
   font-weight: 500;
   text-align: center;
   z-index:3;
@@ -314,9 +314,9 @@ hr {
   }
 
   .long-name {
-    position: absolute;
     bottom: -5%;
     right: -6%;
+    position: absolute;
     font-family: Raleway, sans-serif;
     font-size: 70px;
     font-weight: 900;
@@ -391,6 +391,7 @@ hr {
 @media (min-width: 768px) {
 
   .long-name {
+    padding-top: 3%;
     font-size: 90px;
     right: -15%;
   }
