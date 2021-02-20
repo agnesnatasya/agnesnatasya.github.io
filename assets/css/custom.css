@@ -166,6 +166,9 @@ h3 {
   font-weight: bold;
 }
 
+.row {
+  width: 100%;
+}
 .content-experiences .col-sm-9 {
   padding: 3% 10%;
 }
