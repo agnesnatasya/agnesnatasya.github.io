@@ -7,6 +7,22 @@ body {
   background-color: white;
 }
 
+h3 {
+  font-family: 'Source Sans Pro';
+  font-size: 110px;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  padding-top: 5%;
+}
+
+.section-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: block;
+}
+
 /* .bg-custom {
   background-color: #fef4e8;
 }
@@ -123,96 +139,135 @@ body {
 
 }
 
-.profile-picture {
+/* SKILLS SECTION */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-family: 'Source Sans Pro';
+  font-size: 3vw;
+}
+
+.flip-card {
+  border-style: hidden;
+  background-color: transparent;
+  width: 100%;
+  height: 15vw;
+  aspect-ratio: 1;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  /* background-color: #bbb;
+  color: black; */
   text-align: center;
 }
 
-.profile-picture img {
-  padding-top: 1vh;
-  width: 60vw;
-  vertical-align: top;
-  z-index: 1;
-  margin-left: 0%;
+.flip-card-back {
+  /* background-color: #222e36ef; */
+  color:white;
+  transform: rotateY(180deg);
 }
 
-.content-home {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background-color: #fef4e8;
-  color: #575656
+/* Style the back side */
+.flip-card-back {
+ transform: rotateY(180deg);
 }
 
-h3 {
-  font-family: Muli;
-  font-size: 22px;
-  letter-spacing: .2em;
-  font-weight: 400;
-  padding-top: 5%;
-  text-transform: uppercase;
-  text-align: center;
-  color: #bf9b6d
+/* Style the front side (fallback if image is missing) */
+#card-1, #card-6, #card-16 {
+  background-color: rgb(255, 243, 205);
+  color: #542222;
+}
+ /* #card-11 {
+  background-color: rgb(163, 255, 179);
+} */
+
+
+ #card-11, #card-13, #card-20 {
+  background-color: rgb(255, 219, 185);
+  color: salmon;
 }
 
-.skill-image-and-title {
-  vertical-align: center;
+#card-4, #card-10 {
+  color: #222f54;
+  background-color: paleturquoise;
 }
+
+#card-12 {
+  background-color: rgb(252, 158, 140);
+}
+
+#card-9 {
+  background-color: #222f54;
+  color: white;
+}
+#card-8 {
+  background-color: rgb(255, 230, 0);
+  color: #542222;
+}
+#card-2, #card-7, #card-19 {
+  background-color: salmon;
+    color: white;
+}
+
+#card-17 {
+  background-color: rgb(98, 176, 163);
+}
+
+#card-3, #card-5, #card-15, #card-18 {
+  background-color: rgb(204, 76, 60);
+  color: white;
+}
+
+ #card-14 {
+  background-color: #224a54;
+  color: white;
+
+}
+
+.card-content {
+  display: table-cell;
+  vertical-align: middle; 
+}
+
 .skill-image {
-  width: 50px;
-  height: 50px;
-  display: block;
+  /* width: 10vw; */
+  height: 7vw;
   margin: auto;
+  text-align: center;
 }
 
 .skill-title {
-  padding-top: 1%;
+  margin: auto;
   text-align: center;
-  vertical-align: center ;
-}
-
-.skill-grid {
-    display: grid;
-    grid-template-rows: 110px 10px 110px 10px 110px 10px 110px 10px 110px;
-    grid-template-columns: 22% 4% 22% 4% 22% 4% 22%;
-}
-
-.skill-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.skill-dot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bf9b6d;
-}
-
-.dot-separator {
-  color: #bf9b6d
-}
-
-.progress {
-  margin-top: 1%;
-  background-color: white;
-  height: 10% !important;
-}
-
-.progress-bar-brown {
-  background-color: #bf9b6d !important;
-  border-radius: 5px;
   vertical-align: middle;
-}
-
-.progress-bar {
-  display: inline-block;
-}
-
-.col-md-9.progress {
-  background-color: #fef4e8;
 }
 
 .experience-img {
@@ -374,7 +429,7 @@ hr {
 }
 
 
-
+/* 
 @media (min-width: 576px) { 
 
   .experience-img {
@@ -607,4 +662,4 @@ hr {
   }
 
 
-}
+} */
