@@ -140,11 +140,10 @@ h3 {
 }
 
 /* SKILLS SECTION */
-.skill-grid {
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
   font-family: 'Source Sans Pro';
@@ -167,7 +166,6 @@ h3 {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -184,13 +182,10 @@ h3 {
 }
 
 .flip-card-front {
-  /* background-color: #bbb;
-  color: black; */
-  text-align: center;
+ text-align: center;
 }
 
 .flip-card-back {
-  /* background-color: #222e36ef; */
   color:white;
   transform: rotateY(180deg);
 }
@@ -201,52 +196,50 @@ h3 {
 }
 
 /* Style the front side (fallback if image is missing) */
-#card-1, #card-6, #card-16 {
+#card-skills-1, #card-skills-6, #card-skills-16 {
   background-color: rgb(255, 243, 205);
   color: #542222;
 }
- /* #card-11 {
-  background-color: rgb(163, 255, 179);
-} */
 
-
- #card-11, #card-13, #card-20 {
+ #card-skills-11, #card-skills-13, #card-skills-20 {
   background-color: rgb(255, 219, 185);
   color: salmon;
 }
 
-#card-4, #card-10 {
+#card-skills-4, #card-skills-10 {
   color: #222f54;
   background-color: paleturquoise;
 }
 
-#card-12 {
+#card-skills-12 {
   background-color: rgb(252, 158, 140);
 }
 
-#card-9 {
+#card-skills-9 {
   background-color: #222f54;
   color: white;
 }
-#card-8 {
+
+#card-skills-8 {
   background-color: rgb(255, 230, 0);
   color: #542222;
 }
-#card-2, #card-7, #card-19 {
+
+#card-skills-2, #card-skills-7, #card-skills-19 {
   background-color: salmon;
     color: white;
 }
 
-#card-17 {
+#card-skills-17 {
   background-color: rgb(98, 176, 163);
 }
 
-#card-3, #card-5, #card-15, #card-18 {
+#card-skills-3, #card-skills-5, #card-skills-15, #card-skills-18 {
   background-color: rgb(204, 76, 60);
   color: white;
 }
 
- #card-14 {
+ #card-skills-14 {
   background-color: #224a54;
   color: white;
 
@@ -258,7 +251,6 @@ h3 {
 }
 
 .skill-image {
-  /* width: 10vw; */
   height: 7vw;
   margin: auto;
   text-align: center;
@@ -270,26 +262,102 @@ h3 {
   vertical-align: middle;
 }
 
-.experience-img {
-  display: none;
+/* EXPERIENCES SECTION */
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
 }
-
-.experience-title {
-  font-family: Raleway, serif;
-  font-size: 16px;
-  letter-spacing: .1em;
-  font-weight: 400;
-  padding-top: 7%;
-  color: black;
-  font-weight: bold;
-}
-
-.row {
+.experiences-grid-card {
   width: 100%;
+  height: 100%;
 }
-.content-experiences .col-sm-9 {
-  padding: 3% 10%;
+
+
+.card-experiences-content {
+  width: 100%;
+  text-align: center;
 }
+.experiences-image {
+  width: 10vw;
+}
+
+.experiences-company {
+  font-family: 'Poppins';
+  font-size: 4vw;
+  font-style: bold;
+  font-weight: 900;
+  margin-bottom: 5%;
+}
+
+.experiences-role {
+  font-family: 'Urbanist';
+  font-size: 2vw;
+  margin-bottom: 5%;
+}
+.experiences-role {
+  font-family: 'Urbanist';
+  font-size: 2vw;
+  margin-bottom: 2%;
+}
+hr.solid {
+  border-top: 3px solid black;
+  margin:auto;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  width: 10%;
+  text-align: center;
+}
+
+hr.solid-white {
+  border-top: 3px solid white;
+  margin:auto;
+  margin-top: 5%;
+  margin-bottom: 3.5%;
+  width: 5%;
+  text-align: center;
+}
+
+.experiences-description {
+  font-family: 'Source Sans Pro';
+  font-size: 1.3vw;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+}
+
+#card-experiences-1 {
+  padding: 10%;
+  background-color: rgb(255, 219, 185);
+  color: #702222;
+}
+
+#card-experiences-2 {
+  padding: 10%;
+  background-color: paleturquoise;
+  color: #222f54;
+}
+
+#card-experiences-3 {
+  padding: 5%;
+  background-color: #222f54;
+  color: white;
+  grid-column: 1 / span 2;
+}
+
+#card-experiences-4 {
+  padding: 10%;
+  background-color: salmon;
+  color: white;
+}
+
+#card-experiences-5 {
+  padding: 10%;
+  background-color: rgb(204, 76, 60);
+  color: white
+}
+
 
 .project-title {
   font-family: Raleway, serif;
