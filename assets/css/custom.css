@@ -12,7 +12,7 @@ h3 {
   font-size: 7.7vw;
   letter-spacing: 0.03em;
   font-weight: 800;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .section-content {
@@ -163,12 +163,12 @@ h3 {
   color: #542222;
 }
 
- #card-skills-11, #card-skills-13, #card-skills-20 {
+#card-skills-11, #card-skills-20 {
   background-color: rgb(255, 219, 185);
   color: salmon;
 }
 
-#card-skills-4, #card-skills-10, #card-skills-19 {
+#card-skills-8, #card-skills-10, #card-skills-19 {
   color: #222f54;
   background-color: paleturquoise;
 }
@@ -192,11 +192,17 @@ h3 {
     color: white;
 }
 
-#card-skills-17 {
-  background-color: rgb(98, 176, 163);
+#card-skills-3, #card-skills-13 {
+  background-color: rgb(205, 228, 202);
+  color: rgb(30, 77, 3)
 }
 
-#card-skills-3, #card-skills-5, #card-skills-15, #card-skills-18 {
+#card-skills-4, #card-skills-17 {
+  background-color: rgb(98, 176, 163);
+  color: white;
+}
+
+#card-skills-5, #card-skills-15, #card-skills-18 {
   background-color: rgb(204, 76, 60);
   color: white;
 }
