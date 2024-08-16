@@ -9,24 +9,32 @@ body {
 
 h3 {
   font-family: 'Source Sans Pro';
-  font-size: 7.7vw;
-  letter-spacing: 0.03em;
+  font-size: 3vw;
+  letter-spacing: 0.01em;
   font-weight: 800;
   padding-top: 3%;
+}
+
+h5 {
+  font-family: 'Optima';
+  font-size: 2vw;
+  letter-spacing: 0.0em;
+  font-weight: 300;
 }
 
 .section-content {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: %;
   display: block;
 }
 /* HOME PAGE */ 
 #home {
-  padding: 5vh;
+  padding: 10%;
+  padding-top:0%;
+  padding-bottom:10%;
   height: 100vh; 
-  width: 100vw; 
   display: block;
 }
 
@@ -72,7 +80,7 @@ h3 {
 
 #greetings {
   font-family: 'Secular One';
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: 1000;
   color: white;
   text-align: right;
@@ -83,8 +91,8 @@ h3 {
 
 #name {
   font-family: 'Secular One';
-  font-size: 7vw;
-  font-weight: 100;
+  font-size: 8vw;
+  font-weight: 900;
   vertical-align: middle;
   padding-left: 30px;
   display: table-cell;
@@ -93,12 +101,12 @@ h3 {
 
 #name-text {
   background: white;
-  padding: 10px;
-
+  padding: 20px;
+  font-size: 7vw;
 }
 
 /* SKILLS SECTION */
-.skills-grid {
+.about-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -115,10 +123,19 @@ h3 {
   perspective: 1000px;
 }
 
-.flip-card-skills {
+.flip-card-about {
   height: 15vw;
 }
 
+
+.custom-link {
+  color: inherit; /* Inherit the font color from the parent element */
+  text-decoration: none; /* Optional: add underline on hover */
+}
+.custom-link:hover {
+  color: inherit; /* Ensure the color stays the same on hover */
+  text-decoration: underline; /* Optional: add underline on hover */
+}
 
 .flip-card-inner {
   position: relative;
@@ -158,56 +175,56 @@ h3 {
 }
 
 /* Style the front side (fallback if image is missing) */
-#card-skills-1, #card-skills-6, #card-skills-16 {
+#card-about-1, #card-about-6, #card-about-16 {
   background-color: rgb(255, 243, 205);
   color: #542222;
 }
 
-#card-skills-11, #card-skills-20 {
+#card-about-11, #card-about-20 {
   background-color: rgb(255, 219, 185);
   color: salmon;
 }
 
-#card-skills-8, #card-skills-10, #card-skills-19 {
+#card-about-8, #card-about-10, #card-about-19 {
   color: #222f54;
   background-color: paleturquoise;
 }
 
-#card-skills-12 {
+#card-about-12 {
   background-color: rgb(252, 158, 140);
 }
 
-#card-skills-9 {
+#card-about-9 {
   background-color: #222f54;
   color: white;
 }
 
-#card-skills-8 {
+#card-about-8 {
   background-color: rgb(255, 230, 0);
   color: #542222;
 }
 
-#card-skills-2, #card-skills-7 {
+#card-about-2, #card-about-7 {
   background-color: salmon;
     color: white;
 }
 
-#card-skills-3, #card-skills-13 {
+#card-about-3, #card-about-13 {
   background-color: rgb(205, 228, 202);
   color: rgb(30, 77, 3)
 }
 
-#card-skills-4, #card-skills-17 {
+#card-about-4, #card-about-17 {
   background-color: rgb(98, 176, 163);
-  color: white;
+  color: rgb(235, 222, 117);
 }
 
-#card-skills-5, #card-skills-15, #card-skills-18 {
+#card-about-5, #card-about-15, #card-about-18 {
   background-color: rgb(204, 76, 60);
   color: white;
 }
 
- #card-skills-14 {
+ #card-about-14 {
   background-color: #224a54;
   color: white;
 
@@ -509,7 +526,7 @@ hr.solid-white {
 }
 
 .footer-notes {
-  background-color: rgb(255, 219, 185);
+  background-color: rgb(255, 255, 255);
   color: salmon;
   font-family: 'Source Sans Pro';
   font-style: italic;
@@ -520,18 +537,37 @@ hr.solid-white {
   margin-right: 10%;
 }
 
-@media (max-width: 600px) {
-  .experiences-grid > div {
+/* Rsponsive design uwaw */
+@media (max-width: 600px) {  
+  .about-grid > div {
     grid-column: span 2 !important; 
   }
-
-  .skills-grid > div {
-    grid-column: span 2 !important; 
+}
+/* Media query for small screens */
+@media screen and (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
   }
 
-
-  .projects-grid > div {
-    grid-column: span 2 !important; 
+  .grid-item-home-1 {
+    height: 20vh; 
+    background-color: salmon;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: auto; /* Let the grid items automatically position themselves in separate rows */
   }
-
+  
+  .grid-item-home-2 {
+    height: 20vh; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: auto; /* Let the grid items automatically position themselves in separate rows */
+    background-image: url("../img/home-2.jpg");
+    background-size: cover;
+  }
+ 
+  #home {
+    height: 40vh
+  }
 }
